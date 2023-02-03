@@ -3084,7 +3084,7 @@ textarea.form-control-lg {
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.8rem 2.4rem;
+  padding: 0.8rem 0.8rem;
   font-size: 1rem;
   border-radius: 0.2rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4000,8 +4000,8 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle-split {
-  padding-right: 1.8rem;
-  padding-left: 1.8rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
 }
 .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after {
   margin-left: 0;
@@ -11712,5 +11712,19 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 16.5px;
+  }
+}
+.encabezado {
+  background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
+}
+
+@media (min-width: 768px) {
+  .encabezado {
+    background: url("../images/bgSpaceLg3.jpg") center center/cover fixed;
   }
 }/*# sourceMappingURL=estilos.css.map */
