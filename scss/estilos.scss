@@ -1,0 +1,18 @@
+///////////////////////////////////////////
+///1.Patron de colores
+///////////////////////////////////////////
+$principal: #dc273c;
+$secundario: #293549;
+$texto: #494949;
+
+///////////////////////////////////////////
+///2.Modificacion de variables de bootstrap
+/// //////////////////////////////////////
+$primary: $principal; //Color principal 
+$secundary:$secundario; //Color secundario
+$font-family-base: 'Opens Sans', sans-serif; //Tipo de letra general
+$body-color: $texto; //Color del texto general
+$font-size-root:15px; //Tañado del texto general
+
+@import "../libs/bootstrap/scss/bootstrap";
+
