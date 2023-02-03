@@ -1,8 +1,8 @@
 ///////////////////////////////////////////
 ///1.Patron de colores
 ///////////////////////////////////////////
-$principal: #B5B4B4;
-$secundario: #29d;
+$principal: #29d;
+$secundario: #B5B4B4; 
 $texto: #494949;
 
 ///////////////////////////////////////////
@@ -13,6 +13,30 @@ $secundary:$secundario; //Color secundario
 $font-family-base: 'Lato', sans-serif; //Tipo de letra general
 $body-color: $texto; //Color del texto general
 $font-size-root:15px; //Tañado del texto general
+$enable-negative-margins: true;
+
+
+///////////////////////////////////////////
+///Componente Navbar
+/// //////////////////////////////////////
+$navbar-toggler-padding-y:0;
+$navbar-toggler-padding-x:0;
+$navbar-toggler-focus-width:0;
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $principal;
+$navbar-dark-active-color: $principal;
+
+///////////////////////////////////////////
+///Componente Buttons
+/// //////////////////////////////////////
+$btn-border-radius: .2rem;
+$btn-padding-y: .8rem;
+$btn-padding-x: 2.4rem;
+
 
 @import "../libs/bootstrap/scss/bootstrap";
 
+
+///////////////////////////////////////////
+///Estilos generales 
+/// //////////////////////////////////////
