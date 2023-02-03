@@ -11727,4 +11727,20 @@ textarea.form-control-lg {
   .encabezado {
     background: url("../images/bgSpaceLg3.jpg") center center/cover fixed;
   }
+}
+.fondoCover {
+  position: relative;
+}
+.fondoCover::before {
+  content: "";
+  background-color: #B5B4B4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+.fondoCover > * {
+  position: relative;
 }/*# sourceMappingURL=estilos.css.map */

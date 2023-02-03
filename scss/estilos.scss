@@ -64,3 +64,23 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
     }    
 
 }
+
+//Capa cover reutilizable >>> aplica una capa semitransparente a donde se integre
+.fondoCover{
+    position: relative;
+
+    &::before{
+        content: "";
+        background-color: $secundario;
+        position:absolute;
+        left:0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: .2;
+    }
+
+    &>*{
+        position: relative;
+    }
+}
