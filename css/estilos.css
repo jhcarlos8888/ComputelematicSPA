@@ -8229,6 +8229,38 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
+.z-index-n2 {
+  z-index: -2 !important;
+}
+
+.z-index-n1 {
+  z-index: -1 !important;
+}
+
+.z-index-0 {
+  z-index: 0 !important;
+}
+
+.z-index-1 {
+  z-index: 1 !important;
+}
+
+.z-index-2 {
+  z-index: 2 !important;
+}
+
+.z-index-3 {
+  z-index: 3 !important;
+}
+
+.z-index-4 {
+  z-index: 4 !important;
+}
+
+.z-index-5 {
+  z-index: 5 !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -11720,10 +11752,16 @@ textarea.form-control-lg {
   }
 }
 .encabezado {
+  /* 
+  background-image: url("../images/bgSpaceMobile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; 
+  */
   background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .encabezado {
     background: url("../images/bgSpaceLg3.jpg") center center/cover fixed;
   }
@@ -11768,5 +11806,17 @@ textarea.form-control-lg {
 @media (min-width: 576px) {
   .fontPersonalDescHeader {
     font-size: 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    background: #B5B4B4;
+    border-radius: 0.3rem;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 1px rgba(0, 0, 0, 0.4);
   }
 }/*# sourceMappingURL=estilos.css.map */
