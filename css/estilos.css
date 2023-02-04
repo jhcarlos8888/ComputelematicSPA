@@ -11723,7 +11723,7 @@ textarea.form-control-lg {
   background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .encabezado {
     background: url("../images/bgSpaceLg3.jpg") center center/cover fixed;
   }
@@ -11740,4 +11740,14 @@ textarea.form-control-lg {
 }
 .fondoCover > * {
   position: relative;
+}
+
+.navbar-toggler i::before {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar-toggler[aria-expanded=true] i::before {
+  content: "\f62a";
+  color: #29d;
 }/*# sourceMappingURL=estilos.css.map */

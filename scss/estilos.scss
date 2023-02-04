@@ -1,13 +1,13 @@
-///////////////////////////////////////////
+
 ///1.Patron de colores
-///////////////////////////////////////////
+
 $principal: #29d;
 $secundario: #B5B4B4; 
 $texto: #494949;
 
-///////////////////////////////////////////
+
 ///2.Modificacion de variables de bootstrap
-/// //////////////////////////////////////
+
 $primary: $principal; //Color principal 
 $secundary:$secundario; //Color secundario
 $font-family-base: 'Lato', sans-serif; //Tipo de letra general
@@ -16,9 +16,9 @@ $font-size-root:15px; //Tañado del texto general
 $enable-negative-margins: true;
 
 
-///////////////////////////////////////////
+
 ///Componente Navbar
-/// //////////////////////////////////////
+
 $navbar-toggler-padding-y:0;
 $navbar-toggler-padding-x:0;
 $navbar-toggler-focus-width:0;
@@ -26,9 +26,9 @@ $navbar-dark-color: #fff;
 $navbar-dark-hover-color: $principal;
 $navbar-dark-active-color: $principal;
 
-///////////////////////////////////////////
+
 ///Componente Buttons
-/// //////////////////////////////////////
+
 $btn-border-radius: .2rem;
 $btn-padding-y: .6rem;
 $btn-padding-x: .6rem;
@@ -37,18 +37,18 @@ $btn-padding-x: .6rem;
 @import "../libs/bootstrap/scss/bootstrap";
 
 
-///////////////////////////////////////////
+
 ///Estilos generales 
-/// //////////////////////////////////////
+
 @media (min-width:768px){
     :root {
         font-size: 16.5px;
     }
 }
 
-///////////////////////////////////////////
+
 ///Estilos para encabezado 
-/// //////////////////////////////////////
+
 .encabezado{
 //background-image: url("../images/bgSpaceMobile.jpg");
 //background-position: center center;
@@ -58,7 +58,7 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
 
 }
 
-@media (min-width:768px){
+@media (min-width:576px){
     .encabezado{   
         background: url("../images/bgSpaceLg3.jpg") center center/cover fixed ;
         
@@ -85,4 +85,14 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
     &>*{
         position: relative;
     }
+}
+
+.navbar-toggler i::before{
+    transition: all 0.5s ease;   
+}
+
+.navbar-toggler[aria-expanded="true"] i::before{
+    content: "\f62a";
+    color:$principal;
+    
 }
