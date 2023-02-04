@@ -11750,4 +11750,23 @@ textarea.form-control-lg {
 .navbar-toggler[aria-expanded=true] i::before {
   content: "\f62a";
   color: #29d;
+}
+
+.fontPersonalTitleHeader {
+  font-family: "Audiowide", cursive;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 320px) {
+  .fontPersonalTitleHeader {
+    font-size: 23px;
+  }
+}
+.fontPersonalDescHeader {
+  font-family: "Audiowide", cursive;
+}
+
+@media (min-width: 576px) {
+  .fontPersonalDescHeader {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
