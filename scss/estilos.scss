@@ -9,7 +9,7 @@ $texto: #494949;
 ///2.Modificacion de variables de bootstrap
 
 $primary: $principal; //Color principal 
-$secundary:$secundario; //Color secundario
+$secondary:$secundario; //Color secundario
 $font-family-base: 'Lato', sans-serif; //Tipo de letra general
 $body-color: $texto; //Color del texto general
 $font-size-root:15px; //Tañado del texto general
@@ -34,46 +34,75 @@ $btn-padding-y: .6rem;
 $btn-padding-x: .6rem;
 
 
+///Carga de funciones nativas de bootstrap
+@import "../libs/bootstrap/scss/functions";
+@import "../libs/bootstrap/scss/variables";
+@import "../libs/bootstrap/scss/utilities";
+
+
+///Api de utilidades personalizadas
+$utilities:(
+    "Orden de capas":(
+        property: z-index,
+        responsive: false,
+        class: z-index,
+        values:(
+            n2:-2,
+            n1:-1,
+            0:0,
+            1:1,
+            2:2,
+            3:3,
+            4:4,
+            5:5,
+        ),
+    )
+);
+
+
 @import "../libs/bootstrap/scss/bootstrap";
 
 
 
 ///Comienzo de estilos generales 
 
-//Asignacion de tamaño de letra general despues de contexto SM 
-@media (min-width:768px){
+//Asignacion de tamaño de letra general 
+//despues de contexto md 768px en adelante
+@include media-breakpoint-up(md) { 
     :root {
         font-size: 16.5px;
     }
-}
+ }
 
 
 ///Estilos para encabezado 
 
 //Asignacion de fondo para pagina principal mobile
 .encabezado{
-//background-image: url("../images/bgSpaceMobile.jpg");
-//background-position: center center;
-//background-size: cover;
-//background-attachment: fixed;
+/* 
+background-image: url("../images/bgSpaceMobile.jpg");
+background-position: center center;
+background-size: cover;
+background-attachment: fixed; 
+*/
 background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
 
 }
 
 //Asignacion de fondo para pagina principal escritorio
-@media (min-width:576px){
+//se cambia imagen despues de 768px en adelante
+@include media-breakpoint-up(md) { 
     .encabezado{   
-        background: url("../images/bgSpaceLg3.jpg") center center/cover fixed ;
-        
+        background: url("../images/bgSpaceLg3.jpg") center center/cover fixed ;       
+    }
 
-    }    
+ }
 
-}
+
 
 //Capa cover reutilizable >>> aplica una capa semitransparente a donde se integre
 .fondoCover{
     
-
     &::before{
         content: "";
         background-color: $secundario;
@@ -121,9 +150,68 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
     
 }
 
-@media (min-width:576px){
+@include media-breakpoint-up(sm) { 
     .fontPersonalDescHeader{
         font-size: 25px;
         
     }
+ }
+
+
+
+//Personalizacion menu mobile
+//media-breakpoint-down se utiliza para aplicar estilos
+//desde (md)768px hacia abajo
+@include media-breakpoint-down(md){
+    
+    .navbar-nav{
+        background: $secundario;
+        border-radius: 0.3rem;
+        
+    }
+    
+    .navbar-dark .navbar-nav .nav-link{
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+        box-shadow: 0 1px rgba(0, 0, 0, 0.40);
+    }
+
 }
+
+
+//Estilos Seccion objetivos generales
+
+.tituloConLinea{
+    margin: 0;
+    padding: 0;
+
+    &::after{
+        
+        content: "";
+        display: block;
+        width: 150px;
+        border-bottom: 3px solid;
+        margin: 1.3rem 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        @include media-breakpoint-up(md){
+            width: 400px;
+            margin: 1.8rem 0;
+        }
+
+    }
+}
+
+
+.objetivosGeneralesItem{
+    transition: box-shadow .4s ease;
+}
+
+.objetivosGeneralesItem:hover{
+    box-shadow: $box-shadow;
+}
+
+
+
