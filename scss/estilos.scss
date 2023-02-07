@@ -9,7 +9,7 @@ $texto: #494949;
 ///2.Modificacion de variables de bootstrap
 
 $primary: $principal; //Color principal 
-$secundary:$secundario; //Color secundario
+$secondary:$secundario; //Color secundario
 $font-family-base: 'Lato', sans-serif; //Tipo de letra general
 $body-color: $texto; //Color del texto general
 $font-size-root:15px; //Tañado del texto general
@@ -177,3 +177,41 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
     }
 
 }
+
+
+//Estilos Seccion objetivos generales
+
+.tituloConLinea{
+    margin: 0;
+    padding: 0;
+
+    &::after{
+        
+        content: "";
+        display: block;
+        width: 150px;
+        border-bottom: 3px solid;
+        margin: 1.3rem 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        @include media-breakpoint-up(md){
+            width: 400px;
+            margin: 1.8rem 0;
+        }
+
+    }
+}
+
+
+.objetivosGeneralesItem{
+    transition: box-shadow .4s ease;
+}
+
+.objetivosGeneralesItem:hover{
+    box-shadow: $box-shadow;
+}
+
+
+
