@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--Fuentes de pagina-->
-        <!--Font one-->
+        <!--Fuente uno-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-        <!--Font two-->
+        <!--Fuente dos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 </head>
 <body>
     <!--INICIO ENCABEZADO-->
-    <header class="encabezado bg-dark vh-100 py-2 py-md-4 position-relative fondoCover">
+    <header class="encabezado bg-dark vh-100 py-2 py-md-4 position-relative fondoCoverHeader">
         <!--Inicio barra de navegacion-->
         <nav class="navbar navbar-expand-md navbar-dark z-index-1">
             <div class="container">
@@ -75,7 +75,7 @@
           </nav>
           <!--Final barra de navegacion-->
 
-          <section class="bienvenidos position-absolute top-50 start-50 translate-middle w-100">
+          <section class="position-absolute top-50 start-50 translate-middle w-100">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 text-center text-white">
@@ -93,8 +93,8 @@
     </header>
     <!--FINAL ENCABEZADO-->
 
-    <!--Inicio Objetivos generales
-      Nuestro objetivo es materializar tus ideas y proyectos--> 
+    <!--Inicio Objetivos generales Nuestro objetivo es materializar tus ideas y proyectos-->
+       
     <main class="objetivosGenerales py-5">
       <div class="container">
           <header class="text-center mb-5">
@@ -135,8 +135,43 @@
           </div>
       </div>
     </main>
-    <!--Final Objetivos generales
-              Nuestro objetivo es materializar tus ideas y proyectos--> 
+    <!--Final Objetivos generales Nuestro objetivo es materializar tus ideas y proyectos-->
+
+    <!--Inicio seccion boletin de Ofertas-->
+    <section class="boletinOfertas py-5 text-white fondoCoverBoletin text-center">
+      <div class="container py-lg-4">
+        <header class="mb-5">
+          <h1 class="display-5 fw-bold tituloConLinea">Descubre las mejores ofertas y promociones del sector tecnológico y digital</h1>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-xl-7 col-xxl-6 lead mb-4">
+              <p>
+                ¿Quisieras recibir nuestro boletin actualizado? 
+                <br>
+                La información ingresada por medio de este formulario solamente se utilizará 
+                para envío de boletines sobre ofertas y promociones de la compañia
+              </p>
+            </div>
+
+            <div class="col-12 col-md-8 col-xl-7 ">
+              <form action="#" class="formBoletinOfertas">
+                <div class="input-group mb-3">
+                  <input type="email" name="myEmail" id="myEmail" class="form-control" 
+                  placeholder="Ingresa tu correo electronico..." aria-label="Ingresa tu correo electronico..." aria-describedby="btnEnvioSuscripcion">
+                  <button class="btn btn-primary px-2 py-2 px-lg-5 py-lg-3" type="button" id="btnEnvioSuscripcion">
+                    <i class="bi bi-send fs-1 d-lg-none"></i>
+                    <span class="d-none d-lg-block">Suscribir</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+              
+     
 
 
 <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
