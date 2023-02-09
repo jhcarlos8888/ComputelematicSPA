@@ -11875,4 +11875,36 @@ textarea.form-control-lg {
 }
 .fondoCoverBoletin > * {
   position: relative;
+}
+
+.itemProdSer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.itemProdSer::before {
+  content: "";
+  background: #B5B4B4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+.itemProdSer:hover::before {
+  opacity: 0.8;
+}
+.itemProdSer h3, .itemProdSer .h3 {
+  position: absolute;
+  bottom: -4rem;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: bottom 0.6s ease;
+  transition: bottom 0.6s ease;
+}
+.itemProdSer:hover h3, .itemProdSer:hover .h3 {
+  bottom: 3rem;
 }/*# sourceMappingURL=estilos.css.map */
