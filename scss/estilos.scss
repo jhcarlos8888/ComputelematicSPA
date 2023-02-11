@@ -77,10 +77,10 @@ $utilities:(
 
 //Asignacion de fondo para seccion header
 .encabezado{
-background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
+background: url("../images/secBgHeader/bgSpaceMobile.jpg") center center/cover fixed;
 
 @include media-breakpoint-up(md) { 
-      background: url("../images/bgSpaceLg2.jpg") center center/cover fixed ;       
+      background: url("../images/secBgHeader/bgSpaceLg2.jpg") center center/cover fixed ;       
     }
 }
 
@@ -190,10 +190,10 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
 //Estilos seccion boletin de ofertas
 
 .boletinOfertas{
-    background: url("../images/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
+    background: url("../images/secOfert/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
 
     @include media-breakpoint-up(md) {   
-        background: url("../images/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
+        background: url("../images/secOfert/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
     }              
 }
 

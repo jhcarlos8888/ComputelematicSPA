@@ -11757,11 +11757,11 @@ textarea.form-control-lg {
   }
 }
 .encabezado {
-  background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
+  background: url("../images/secBgHeader/bgSpaceMobile.jpg") center center/cover fixed;
 }
 @media (min-width: 768px) {
   .encabezado {
-    background: url("../images/bgSpaceLg2.jpg") center center/cover fixed;
+    background: url("../images/secBgHeader/bgSpaceLg2.jpg") center center/cover fixed;
   }
 }
 
@@ -11857,11 +11857,11 @@ textarea.form-control-lg {
 }
 
 .boletinOfertas {
-  background: url("../images/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
+  background: url("../images/secOfert/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
 }
 @media (min-width: 768px) {
   .boletinOfertas {
-    background: url("../images/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
+    background: url("../images/secOfert/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
   }
 }
 
