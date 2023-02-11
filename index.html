@@ -168,11 +168,15 @@
             </div>
 
             <div class="col-12 col-md-8 col-xl-7 ">
-              <form action="#" class="formBoletinOfertas">
+              <form action="https://formsubmit.co/jhcarlos8888@gmail.com" class="formBoletinOfertas" method="POST">
                 <div class="input-group mb-3">
-                  <input type="email" name="myEmail" id="myEmail" class="form-control" 
+                  <input type="email" name="email" id="email" class="form-control" 
                   placeholder="Ingresa tu correo electrónico..." aria-label="Ingresa tu correo electrónico..." aria-describedby="btnEnvioSuscripcion">
-                  <button class="btn btn-primary px-2 py-2 px-lg-5 py-lg-3" type="button" id="btnEnvioSuscripcion">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_subject" value="Nueva suscripción a boletin de ofertas">
+                  <input type="hidden" name="_cc" value="jh.045@hotmail.com">
+                  <input type="hidden" name="_autoresponse" value="Gracias por suscribirte, pronto te enviaremos nuestras ofertas">
+                  <button class="btn btn-primary px-2 py-2 px-lg-5 py-lg-3" type="submit" id="btnEnvioSuscripcion" formtarget="_blank">
                     <i class="bi bi-send fs-1 d-lg-none"></i>
                     <span class="d-none d-lg-block">Suscribir</span>
                   </button>
@@ -296,46 +300,48 @@
               <img src="images/Logos/LogoComputelematic.png" width="80" higth="auto" alt="Logo de empresa">
               <ul class="list-unstyled my-4 fw-bold d-grid gap-2">
                 <li><a href="mailto:info@computelematic.net">info@computelematic.net</a></li>
-                <li><a href="tel:(+57)3027462184">(+57)302 746 2184</a></li>
-                <li><a href="tel:(+57)3104278515">(+57)310 427 8515</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=573027462184&text=¡Hola!, vengo del sitio web Computelematic, desearía me pueda brindar más información" target="_blank">(+57)302 746 2184</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=573104278515&text=¡Hola!, vengo del sitio web Computelematic, desearía me pueda brindar más información" target="_blank">(+57)310 427 8515</a></li>
               </ul>
               <ul class="redesSociales list-inline">
-                <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/COMPUTELEMATIC/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
               </ul>
             </div>
             <div class="col-12 col-sm-6 col-lg-2 mb-5 mb-lg-0 ms-lg-auto">
               <h5 class="fw-bold mb-4">Servicios</h5>
               <ul class="list-unstyled d-grid gap-2 ">
-                <li><a href="#"></a>Soporte técnico</li>
-                <li><a href="#"></a>Diseño gráfico</li>
-                <li><a href="#"></a>Programación</li>
-                <li><a href="#"></a>Marketing</li>
+                <li><a href="#">Soporte técnico</a></li>
+                <li><a href="#">Diseño gráfico</a></li>
+                <li><a href="#">Programación</a></li>
+                <li><a href="#">Marketing</a></li>
               </ul>
             </div>
             <div class="col-12 col-sm-6 col-lg-2 mb-5 mb-lg-0">
               <h5 class="fw-bold mb-4">Nosotros</h5>
               <ul class="list-unstyled d-grid gap-2">
-                <li><a href="#"></a>Proyectos</li>
-                <li><a href="#"></a>Ofertas</li>
-                <li><a href="#"></a>Misión</li>
-                <li><a href="#"></a>Visión</li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Misión</a></li>
+                <li><a href="#">Visión</a></li>
               </ul>  
             </div>
             <div class="col-12 col-sm-6 col-lg-2 mb-5 mb-lg-0">
               <h5 class="fw-bold mb-4">Contacto</h5>
               <ul class="list-unstyled d-grid gap-2">
-                <li><a href="#"></a>Cotización</li>
-                <li><a href="#"></a>Soporte</li>
-                <li><a href="#"></a>Foros</li>
-                <li><a href="#"></a>Chat</li>
+                <li><a href="#">Cotización</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Foros</a></li>
+                <li><a href="#">Chat</a></li>
               </ul>
             </div>
           </div>
         <p class="creditos mt-lg-4 mb-0 py-4 text-center text-muted small">Copyright 2023 computelematic.net. Todos los derechos reservados</p>  
         </div> 
+        
     </footer>
+    
     <!--Final pie de pagina-->
 <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
