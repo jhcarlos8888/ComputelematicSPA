@@ -1,4 +1,9 @@
-
+//Herramienta de diseño,dibujo de contornos
+/*
+.row > * {
+    border: 1px solid red;
+}
+*/
 ///1.Patron de colores
 $principal: #29d;
 $secundario: #B5B4B4; 
@@ -72,10 +77,10 @@ $utilities:(
 
 //Asignacion de fondo para seccion header
 .encabezado{
-background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
+background: url("../images/secBgHeader/bgSpaceMobile.jpg") center center/cover fixed;
 
 @include media-breakpoint-up(md) { 
-      background: url("../images/bgSpaceLg2.jpg") center center/cover fixed ;       
+      background: url("../images/secBgHeader/bgSpaceLg2.jpg") center center/cover fixed ;       
     }
 }
 
@@ -185,10 +190,10 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
 //Estilos seccion boletin de ofertas
 
 .boletinOfertas{
-    background: url("../images/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
+    background: url("../images/secOfert/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
 
     @include media-breakpoint-up(md) {   
-        background: url("../images/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
+        background: url("../images/secOfert/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
     }              
 }
 
@@ -244,4 +249,34 @@ background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
     }
 }
 
- 
+//Estilos Seccion footer
+
+.pieDePagina{
+    a{
+        color: $secundario;
+        text-decoration: none;
+    }
+
+    li{
+        color: $secundario;
+    }
+
+    .redesSociales{
+        a{
+            color:black;
+            background: $secundario;
+            width: 1.8rem;
+            height: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: .3rem;
+            
+        }
+    }
+
+    .creditos{
+        border-top: 1px solid black;
+    }
+}
+

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*
+.row > * {
+    border: 1px solid red;
+}
+*/
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11752,11 +11757,11 @@ textarea.form-control-lg {
   }
 }
 .encabezado {
-  background: url("../images/bgSpaceMobile.jpg") center center/cover fixed;
+  background: url("../images/secBgHeader/bgSpaceMobile.jpg") center center/cover fixed;
 }
 @media (min-width: 768px) {
   .encabezado {
-    background: url("../images/bgSpaceLg2.jpg") center center/cover fixed;
+    background: url("../images/secBgHeader/bgSpaceLg2.jpg") center center/cover fixed;
   }
 }
 
@@ -11852,11 +11857,11 @@ textarea.form-control-lg {
 }
 
 .boletinOfertas {
-  background: url("../images/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
+  background: url("../images/secOfert/imagenSeccionBoletinMobile.jpg") center center/cover fixed;
 }
 @media (min-width: 768px) {
   .boletinOfertas {
-    background: url("../images/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
+    background: url("../images/secOfert/imagenSeccionBoletinLg2.jpg") center center/cover fixed;
   }
 }
 
@@ -11907,4 +11912,31 @@ textarea.form-control-lg {
 }
 .itemProdSer:hover h3, .itemProdSer:hover .h3 {
   bottom: 3rem;
+}
+
+.pieDePagina a {
+  color: #B5B4B4;
+  text-decoration: none;
+}
+.pieDePagina li {
+  color: #B5B4B4;
+}
+.pieDePagina .redesSociales a {
+  color: black;
+  background: #B5B4B4;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.3rem;
+}
+.pieDePagina .creditos {
+  border-top: 1px solid black;
 }/*# sourceMappingURL=estilos.css.map */
