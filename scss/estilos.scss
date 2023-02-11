@@ -280,3 +280,17 @@ background: url("../images/secBgHeader/bgSpaceMobile.jpg") center center/cover f
     }
 }
 
+
+//Estilos pagina ResponseSuscOfert
+
+.encabezadoPageSuscOfert{
+    background: url("../images/pageResponseSucOfert/thanksMobile.jpg") center center/cover fixed;
+
+    @include media-breakpoint-up(lg) {   
+        background: url("../images/pageResponseSucOfert/thanks.jpg") center center/cover fixed;
+    }  
+} 
+
+
+
+

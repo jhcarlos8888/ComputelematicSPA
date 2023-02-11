@@ -11939,4 +11939,13 @@ textarea.form-control-lg {
 }
 .pieDePagina .creditos {
   border-top: 1px solid black;
+}
+
+.encabezadoPageSuscOfert {
+  background: url("../images/pageResponseSucOfert/thanksMobile.jpg") center center/cover fixed;
+}
+@media (min-width: 992px) {
+  .encabezadoPageSuscOfert {
+    background: url("../images/pageResponseSucOfert/thanks.jpg") center center/cover fixed;
+  }
 }/*# sourceMappingURL=estilos.css.map */
