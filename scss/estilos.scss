@@ -235,6 +235,7 @@ background: url("../images/secBgHeader/bgSpaceMobile.jpg") center center/cover f
         opacity: .8;
     }
 
+
     h3{
         position: absolute;
         bottom: -4rem;
@@ -247,6 +248,14 @@ background: url("../images/secBgHeader/bgSpaceMobile.jpg") center center/cover f
     &:hover h3{
         bottom: 3rem;
     }
+
+    @include media-breakpoint-down(md){
+        h3{
+            bottom: 3rem;
+        }
+    }
+    
+
 }
 
 //Estilos Seccion footer

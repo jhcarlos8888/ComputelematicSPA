@@ -11913,6 +11913,11 @@ textarea.form-control-lg {
 .itemProdSer:hover h3, .itemProdSer:hover .h3 {
   bottom: 3rem;
 }
+@media (max-width: 767.98px) {
+  .itemProdSer h3, .itemProdSer .h3 {
+    bottom: 3rem;
+  }
+}
 
 .pieDePagina a {
   color: #B5B4B4;
