@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
       let elem = $("#" + element.id);
       let posicionObj1 = element.getBoundingClientRect().top;
       //console.log(posicionObj1);
-      let tamañoPantalla = window.innerHeight / 5;
+      let tamañoPantalla = window.innerHeight / 3.5;
       if (posicionObj1 < tamañoPantalla) {
         //console.log("APLICANDO EFECTOS")
         elem.addClass("animateClass");
