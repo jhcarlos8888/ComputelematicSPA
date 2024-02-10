@@ -1,0 +1,44 @@
+<section class="boletinOfertas py-5 text-white fondoCoverBoletin text-center">
+    <div class="container py-lg-4">
+        <header class="mb-5">
+            <h1 class="display-5 fw-bold tituloConLinea">
+                Descubre las mejores ofertas y promociones del sector tecnológico y
+                digital
+            </h1>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-xl-7 col-xxl-6 lead mb-4">
+                <p>
+                    ¿Quisieras recibir nuestro boletín actualizado?
+                    <br />
+                    La información ingresada por medio de este formulario solamente se
+                    utilizará para envío de boletines sobre ofertas y promociones de
+                    la compañía
+                </p>
+            </div>
+
+            <div class="col-12 col-md-8 col-xl-7">
+                <form action="https://formsubmit.co/info@computelematic.com" class="formBoletinOfertas" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" id="email" class="form-control"
+                            placeholder="Ingresa tu correo electrónico..." aria-label="Ingresa tu correo electrónico..."
+                            aria-describedby="btnEnvioSuscripcion" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_subject" value="Nueva suscripción a boletin de ofertas" />
+                        <input type="hidden" name="_cc" value="jh.045@hotmail.com" />
+                        <input type="hidden" name="_autoresponse"
+                            value="Gracias por suscribirte, pronto te enviaremos nuestras ofertas" />
+                        <input type="hidden" name="_next"
+                            value="https://computelematic.com/pages/responseSuscOfert.html" />
+                        <button class="btn btn-primary px-2 py-2 px-lg-5 py-lg-3" type="submit"
+                            id="btnEnvioSuscripcion">
+                            <i class="bi bi-send fs-1 d-lg-none"></i>
+                            <span class="d-none d-lg-block">Suscribir</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
