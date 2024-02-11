@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { ObjetivosGeneralesComponent } from '../objetivos-generales/objetivos-generales.component';
 import { BoletinOfertasComponent } from '../boletin-ofertas/boletin-ofertas.component';
@@ -10,7 +10,7 @@ import { RespuestaSuscripcionOfertaComponent } from '../respuesta-suscripcion-of
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent,
+  imports: [RouterOutlet, RouterLink, HeaderComponent,
     ObjetivosGeneralesComponent,
     BoletinOfertasComponent,
     ProductosServiciosComponent,
