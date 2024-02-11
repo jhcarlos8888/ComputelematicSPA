@@ -6,16 +6,12 @@ import { BoletinOfertasComponent } from './components/boletin-ofertas/boletin-of
 import { ProductosServiciosComponent } from './components/productos-servicios/productos-servicios.component';
 import { PieDePaginaComponent } from './components/pie-de-pagina/pie-de-pagina.component';
 import { RespuestaSuscripcionOfertaComponent } from './components/respuesta-suscripcion-oferta/respuesta-suscripcion-oferta.component';
+import { HomeComponent } from './components/home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent,
-    ObjetivosGeneralesComponent,
-    BoletinOfertasComponent,
-    ProductosServiciosComponent,
-    PieDePaginaComponent,
-    RespuestaSuscripcionOfertaComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
