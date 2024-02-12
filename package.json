@@ -2,7 +2,7 @@
   "name": "computelematic-spa",
   "version": "1.0.0",
   "engines": {
-    "node": ">=18 <20"
+    "node": "20.11.0"
   },
   "scripts": {
     "ng": "ng",
