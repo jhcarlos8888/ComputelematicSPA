@@ -11,7 +11,7 @@ $texto: #494949;
 
 
 ///2.Modificacion de variables de bootstrap
-$primary: $principal; //Color principal 
+$primary: $principal; //Color principal
 $secondary: $secundario; //Color secundario
 $font-family-base: 'Lato', sans-serif; //Tipo de letra general
 $body-color: $texto; //Color del texto general
@@ -62,7 +62,7 @@ $utilities: (
 @import "../libs/bootstrap/scss/bootstrap";
 
 
-//Asignacion de tamaño de letra general 
+//Asignacion de tamaño de letra general
 //despues de contexto md 768px en adelante
 @include media-breakpoint-up(md) {
     :root {
@@ -71,7 +71,7 @@ $utilities: (
 }
 
 
-///Estilos para encabezado 
+///Estilos para encabezado
 
 //Asignacion de fondo para seccion header
 .encabezado {
@@ -237,7 +237,7 @@ $utilities: (
             opacity: .8;
         }
     }
-    
+
 
 
     h3 {
@@ -255,7 +255,7 @@ $utilities: (
             bottom: 3rem;
         }
     }
-    
+
 
 }
 
@@ -274,15 +274,15 @@ $utilities: (
         opacity: .8;
         transition: opacity 2s ease;
         }
-        
+
         h3 {
             bottom: 3rem;
             transition: bottom 1.5s ease;
             max-width: 50%;
             transform: translateX(50%);
-        }  
-    
-    }  
+        }
+
+    }
 }
 
 
@@ -327,3 +327,24 @@ $utilities: (
         background: url("../images/pageResponseSucOfert/thanks.jpg") center center/cover fixed;
     }
 }
+
+
+.dropMenuProducts{
+  list-style: none;
+  padding: 0;
+  display:flex;
+}
+
+@media screen and (max-width: 430px){
+  .dropMenuProducts{
+    list-style: none;
+    padding: 0;
+    display: block;
+  }
+}
+
+
+
+
+
+
